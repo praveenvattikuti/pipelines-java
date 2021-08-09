@@ -6,7 +6,7 @@
 parameters:
   - name: configuration
     displayName: Configuration
-    type: boolean
+    type: string
     values:
     - development
     - staging
