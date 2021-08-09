@@ -11,6 +11,7 @@ parameters:
     - development
     - staging
     - production
+    - test
     
 trigger: none
 
