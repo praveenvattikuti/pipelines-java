@@ -6,7 +6,11 @@
 parameters:
   - name: dev
     type: object
-    default: ['CB_DEV', 'B_DEV', 'YB_DEV', 'VM_DEV']
+    default:
+        nested:
+          one: apple
+          two: pear
+          count: 3
     
 
 pool:
