@@ -6,13 +6,13 @@
 parameters:
   - name: dev
     type: object
-    default: ['dev', 'staging', 'prod']
-    displayName: 
-    values:
-      - one
-      - two
-      - three
-      - four
+    default: dev
+  - name: staging
+    type: object
+    default: staging
+  - name: prod
+    type: object
+    default: prod
 
 pool:
   vmImage: ubuntu-latest
