@@ -4,19 +4,13 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 parameters:
-  - name: myObject
+  - name: configuration
+    displayName: Configuration
     type: object
-    default:
-      foo: FOO
-      bar: BAR
-      things:
-      - one
-      - two
-      - three
-      nested:
-        one: apple
-        two: pear
-        count: 3
+    values:
+    - development
+    - staging
+    - production
     
 trigger: none
 
