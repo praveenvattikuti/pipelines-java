@@ -6,13 +6,13 @@
 parameters:
   - name: dev
     type: boolean
-    default: true
+    default: false
   - name: staging
     type: boolean
-    default: true
+    default: false
   - name: prod
     type: boolean
-    default: true
+    default: false
 
 pool:
   vmImage: ubuntu-latest
