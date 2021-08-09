@@ -6,7 +6,6 @@
 parameters:
   - name: configuration
     displayName: Configuration
-    type: values
     values:
     - development
     - staging
