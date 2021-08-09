@@ -6,12 +6,11 @@
 parameters:
   - name: dev
     type: object
-    default:
-        nested:
-          one: apple
-          two: pear
-          count: 3
-    
+    default: []
+    values:
+      - dev
+      - staging
+      - prod 
 
 pool:
   vmImage: ubuntu-latest
