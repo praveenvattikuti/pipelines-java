@@ -4,17 +4,15 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 parameters:
-  - name: dev
-    type: stepList
-    default:
-      - dev
-      - prod
-  - name: staging
+  - name: configuration
+    displayName: Configuration
     type: string
-    default: staging
-  - name: prod
-    type: object
-    default: prod
+    default: development
+    values:
+    - development
+    - demo
+    - staging
+    - production
 
 pool:
   vmImage: ubuntu-latest
