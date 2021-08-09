@@ -6,13 +6,7 @@
 parameters:
   - name: dev
     type: object
-    values:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-    default: ['1', '2', '3']
+    default: ['CB_DEV', 'B_DEV', 'YB_DEV', 'VM_DEV']
     
 
 pool:
