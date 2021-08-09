@@ -7,7 +7,6 @@ parameters:
   - name: configuration
     displayName: Configuration
     type: string
-    default: development
     values:
     - development
     - staging
