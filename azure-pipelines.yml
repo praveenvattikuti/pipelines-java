@@ -12,8 +12,8 @@ parameters:
       - 3
       - 4
       - 5
-trigger:
-- master
+    default: ['1', '2', '3']
+    
 
 pool:
   vmImage: ubuntu-latest
