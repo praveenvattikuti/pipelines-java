@@ -6,7 +6,7 @@
 parameters:
   - name: configuration
     displayName: Configuration
-    type: string
+    type: object
     values:
     - development
     - staging
