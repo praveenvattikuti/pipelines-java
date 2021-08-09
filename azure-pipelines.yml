@@ -8,11 +8,11 @@ parameters:
     type: boolean
     default: false
   - name: staging
-    type: boolean
-    default: false
+    type: string
+    default: staging
   - name: prod
-    type: boolean
-    default: false
+    type: object
+    default: prod
 
 pool:
   vmImage: ubuntu-latest
