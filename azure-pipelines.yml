@@ -4,11 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 parameters:
-  - name: string
-    displayName: string
-    type: enum
-    # default: ['development', 'staging', 'production', 'test' ]
-    displayHint: checkbox
+  - name: configuration
+    displayName: Configuration
+    type: object
+    default: ['development', 'staging', 'production', 'test' ]
     
 trigger: none
 
