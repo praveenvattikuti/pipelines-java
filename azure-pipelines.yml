@@ -6,7 +6,6 @@
 parameters:
   - name: dev
     type: object
-    default: 2
     values:
       - 1
       - 2
