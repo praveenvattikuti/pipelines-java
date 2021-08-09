@@ -5,8 +5,10 @@
 
 parameters:
   - name: dev
-    type: boolean
-    default: false
+    type: stepList
+    default:
+      - dev
+      - prod
   - name: staging
     type: string
     default: staging
