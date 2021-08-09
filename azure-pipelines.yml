@@ -5,14 +5,14 @@
 
 parameters:
   - name: dev
-    type: object
-    default: dev
+    type: boolean
+    default: true
   - name: staging
-    type: object
-    default: staging
+    type: boolean
+    default: true
   - name: prod
-    type: object
-    default: prod
+    type: boolean
+    default: true
 
 pool:
   vmImage: ubuntu-latest
