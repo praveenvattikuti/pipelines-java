@@ -6,6 +6,7 @@
 parameters:
   - name: configuration
     displayName: Configuration
+    type: object
     default: ['development', 'staging', 'production', 'test' ]
     values:
     - development
