@@ -6,10 +6,12 @@ parameters:
    - name: test
      type: object
      default: ['test', 'prod']
-   - name: test
+   - name: apps
+     displayName: Configuration
      type: object
      default: ['development', 'staging', 'production', 'test' ]
-   - name: development
+   ${{ for each app in paraemeters.apps }}
+   - name: ${{ app }}
      type: boolean
      default: false
 
