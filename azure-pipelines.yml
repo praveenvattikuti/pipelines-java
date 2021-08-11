@@ -6,7 +6,7 @@
 parameters:
   - name: configuration
     displayName: Configuration
-    type: object
+    type: boolean
     default: ['development', 'staging', 'production', 'test' ]
     
 trigger: none
