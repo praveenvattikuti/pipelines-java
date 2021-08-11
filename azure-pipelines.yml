@@ -8,9 +8,10 @@ parameters:
     displayName: Configuration
     type: object
     default: ['development', 'staging', 'production', 'test' ]
-  - name: ${{ each app in parameters.apps }}
-    type: boolean
-    default: false
+  - ${{ each app in parameters.apps }}:
+   - name: ${{ app }}
+     type: boolean
+     default: false
 
 trigger: none
 
