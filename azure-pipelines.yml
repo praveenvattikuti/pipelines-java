@@ -7,7 +7,7 @@ parameters:
   - name: configuration
     displayName: Configuration
     type: boolean
-    default: ['development', 'staging', 'production', 'test' ]
+    default: true
     
 trigger: none
 
