@@ -8,7 +8,7 @@ parameters:
      default: ['test', 'prod']
    - name: apps
      displayName: Configuration
-     type: object
+     type: string
      values: ['development', 'staging', 'production', 'test' ]
    - name: bool
      type: boolean
