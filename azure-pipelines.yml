@@ -6,8 +6,11 @@
 parameters:
   - name: configuration
     displayName: Configuration
+    type: object
+    default: ['development', 'staging', 'production', 'test' ]
+  - name: ${{ parameters.configuration }}
     type: boolean
-    default: true
+    default: false
     
 trigger: none
 
