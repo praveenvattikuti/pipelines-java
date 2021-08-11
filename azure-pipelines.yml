@@ -10,7 +10,7 @@ parameters:
      displayName: Configuration
      type: object
      default: ['development', 'staging', 'production', 'test' ]
-   ${{ for each app in paraemeters.apps }}:
+   - ${{ for each app in paraemeters.apps }}:
    - name: ${{ app }}
      type: boolean
      default: false
