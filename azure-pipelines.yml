@@ -2,18 +2,16 @@
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
-variables: 
-    - name: one
-      value: initialValue 
 parameters:
-  - name: apps
-    displayName: Configuration
-    type: object
-    default: ['development', 'staging', 'production', 'test' ]
-  - name: development
-    type: boolean
-    default: false
+   - name: test
+     type: object
+     default: ['test', 'prod']
+   - name: test
+     type: object
+     default: ['development', 'staging', 'production', 'test' ]
+   - name: development
+     type: boolean
+     default: false
 
 trigger: none
 
