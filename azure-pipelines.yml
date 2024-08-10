@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: Default
+  name: tesla
   demands:
    - agent.name -equals tesla
 
