@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nginxlatest 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginxlatest
+  template:
+    metadata:
+      labels:
+        app: nginxlatest 
+    spec:
+      containers:
+        - name: nginxlatest 
+          image: spacex.azurecr.io/nginxlatest
+          ports:
+          - containerPort: 80
